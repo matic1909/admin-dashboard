@@ -151,9 +151,20 @@ a {
 }
 
 .sidebar {
+  padding: 16px;
+  display: grid;
+  gap: 40px;
   background-color: var(--blue);
+  font-size: 1.5rem;
   color: #fff;
   grid-row: 1 / 5;
+  align-content: start;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 16px 0;
 }
 
 .sidebar a {
@@ -161,11 +172,20 @@ a {
 }
 
 .logo p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 900;
 }
 
 .content {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: var(--bg-dark);
   grid-column: 2 / 3;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
